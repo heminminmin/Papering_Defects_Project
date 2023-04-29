@@ -1,5 +1,4 @@
 from tensorflow.keras.preprocessing import image as keras_image
-import matplotlib.pyplot as plt
 import tensorflow as tf
 import numpy as np
 
@@ -7,10 +6,7 @@ import numpy as np
 # pip3 install tqdm
 from tqdm import tqdm
 
-fig = plt.figure()
-
-
-def get_tensor_through_imgs_fn(img_paths, resized_height, resized_width):
+def get_tensor_through_imgs_fn(img_paths, resized_height, resized_width, fig):
 
     index = 0
     list_of_tensors = []
